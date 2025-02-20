@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to 5th Ave Theatre | Emily Mena, 2025</title>
+<style type="text/css">
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f8f6f6;
+}
+nav {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.wrapper {
+    width: 1366px;
+    background-color: #f8f6f6;
+    margin: 0 auto;
+    display: block;
+}
+section {
+    height: 1024px;
+    position: relative;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    gap: 50px;
+}
+ul a {
+    text-decoration: none;
+}
+ul a li {
+    padding: 16px 32px;
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    font-family: "Arial Black", "Arial Bold";
+    font-weight: bolder;
+    font-size: large;
+}
+ul a li:hover {
+    background-color: #fdb71a;
+    color: #fff;
+    border-radius: 9px;
+}
+.donate {
+    background-color: #fdb71a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-family: "Arial Black", "Arial Bold";
+    position: relative;
+    right: -111px;
+}
+.donate:hover {
+    background-color: #fdb71a;
+    color: white;
+}
+
+#home {
+    position: relative;
+    background-image: url(5thavetheatre1.jpg);
+    background-repeat: no-repeat;
+    background-position: 45% 22%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112,112,112,0.50);
+}
+
+
+.home-text-1, .home-text-2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(253, 183, 26, 0.9);
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-family: "Arial Black", "Arial Bold";
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.home-text-1 {
+    top: 40%;
+    font-family: "Arial Black", "Arial Bold";
+}
+
+.home-text-2 {
+    top: 50%;
+    font-family: "Arial Black";
+    font-style: normal;
+}
+
+
+nav .logo {
+    position: absolute;
+    left: 40px;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 123px;
+}
+
+
+#media {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1024px;
+    padding: 50px;
+}
+
+.media-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.media-top-left img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: -140px;
+    border: 5px solid #fdb71a;
+}
+
+.media-top-right {
+    text-align: center;
+    font-family: "Arial Black", "Arial Bold";
+}
+
+.media-top-right h1 {
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    top: -188px;
+}
+
+.media-top-right h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: #fdb71a;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.media-top-right p {
+    font-size: 24px;
+    margin-top: -70px;
+    top: -120px;
+    position: relative;
+}
+
+
+.learn-more {
+    background-color: #fdb71a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-family: "Arial Black", "Arial Bold";
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    top: -20px;
+}
+
+.learn-more:hover {
+    background-color: #fdb71a;
+    color: white;
+}
+
+.media-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.media-bottom img {
+    width: 379px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 5px solid #fdb71a;
+}
+
+.imgright {
+    position: relative;
+    right: 7px;
+    top: -25px;
+}
+
+.imgleft {
+    left: auto;
+    position: relative;
+    top: -25px;
+    right: -25px;
+}
+.theatre2-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.theatre2-image img {
+    width: 390px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 5px solid #fdb71a;
+    position: relative;
+    left: -370px;
+    top: -9px;
+}
+.location-text {
+    text-align: center;
+    font-family: "Arial Black", "Arial Bold";
+    position: absolute;
+    top: 11%;
+    right: 10%;
+    transform: translateX(-50%);
+}
+
+.location-text h1 {
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+}
+
+.location-text h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: #fdb71a;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+#directions {
+    margin: 16px;
+    position: absolute;
+    top: 28%;
+    right: 32%;
+    transform: translateX(50%);
+}
+footer {
+    color: rgba(31,31,31,1.00);
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    position: relative;
+}
+
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+  <section id="home">
+    <nav>
+      <img src="5thave.jpg" alt="5th Ave Theatre Logo" class="logo">
+      <ul>
+        <a href="#home"><li>Home</li></a>
+        <a href="#media"><li>Media</li></a>
+        <a href="#location"><li>Location</li></a>
+      </ul>
+      <a class="donate">Donate</a>
+    </nav>
+    
+    <div class="home-text-1">Welcome to 5th Ave Theatre !</div>
+    <div class="home-text-2">Your Entertainment Destination for Sensational Stories...</div>
+  </section>
+  
+  <section id="media">
+    <nav>
+      <img src="5thave.jpg" alt="5th Ave Theatre Logo" class="logo">
+      <ul>
+        <a href="#home"><li>Home</li></a> 
+        <a href="#media"><li>Media</li></a>
+        <a href="#location"><li>Location</li></a>
+      </ul>
+      <a class="donate">Donate</a>
+    </nav>
+    
+    <div class="media-top">
+        <div class="media-top-left">
+            <img src="byebb.jpg" alt="Show Poster">
+        </div>
+        <div class="media-top-right">
+            <h1>Upcoming Shows !</h1>
+            <p>Don't Miss Out</p>
+            <a class="learn-more">Learn More</a>
+        </div>
+    </div>
+    <div class="media-bottom">
+        <img src="aftermidnght.jpg" alt="Upcoming Show 2" class="imgleft">
+        <iframe class="imgright" width="450" height="281" src="https://www.youtube.com/embed/gGzHZDNdjE4" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    </div>
+  </section>
+  
+  <section id="location">
+    <nav>
+      <img src="5thave.jpg" alt="5th Ave Theatre Logo" class="logo">
+      <ul>
+        <a href="#home"><li>Home</li></a>
+        <a href="#media"><li>Media</li></a>
+        <a href="#location"><li>Location</li></a>
+      </ul>
+      <a class="donate">Donate</a>
+    </nav>
+<div class="theatre2-image">
+    <img src="5thavetheatre2.jpg" alt="5thavethea Image" class="5thavethe2">
+</div>
+<div class="location-text">
+    <h1>Come Visit Us !</h1>
+</div>
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.8713287198166!2d-122.33642952357752!3d47.60919158779852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab40daf3ea1%3A0xcd65ac7167a032b5!2sThe%205th%20Avenue%20Theatre!5e0!3m2!1sen!2sus!4v1739895144877!5m2!1sen!2sus" width="400" height="300" id="directions" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+</div>
+<footer>
+    <p>© 2025, Emily Mena. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
+</body>
+</html>
